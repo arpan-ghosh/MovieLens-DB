@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<!--
+  Final Project 600.315: jlee562/aghosh17
+-->
+<html>
+
+  <head>
+    <title>MovieLens Database</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="icon" type="image/png" href="https://www.articleonepartners.com/wp-content/uploads/2015/06/1000px-Clapboard.svg_.png" /> 
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    </head>
+  <body class="loading">
+    <div class="fullscreen-bg">
+    <!-- <video loop muted autoplay poster="assets/video.mp4" class="fullscreen-bg__video">
+        <source src="assets/video.mp4" type="video/mp4">
+        <source src="assets/video.mp4" type="video/mp4">
+        <source src="assets/video.mp4" type="video/mp4">
+    </video> -->
+</div>    
+    <div id="wrapper">
+      <div id="overlay"></div>
+      <div id="main">
+    <!-- Header -->
+          <header id="header">
+            <h1>Other options</h1>
+            <p> Click One! &nbsp;&nbsp;
+            </p>
+
+            <A HREF = "http://www.arpanghosh.com/cs315/containTag.html">Search for Movies Tagged With Your Search Word</A> 
+            <br>
+            <A HREF = "http://www.arpanghosh.com/cs315/listTags.html">Search for All User Submitted Tags by Movie</A> 
+            <br>
+            <A HREF = "http://www.arpanghosh.com/cs315/submittedID.html">Tags Submitted by Particular UserID</A>
+            <br> 
+            <A HREF = "http://www.arpanghosh.com/cs315/ids.html">The TMDB and IMDB IDs of Your Searched Movies</A> 
+            <br>
+            <A HREF = "http://www.arpanghosh.com/cs315/numTags.html">Number of Tags on a Movie</A> 
+            <br>
+            <b><p>
+            <div align =middle>
+            
+        </div>
+            </p></b>
+
+          </header>
+        <!-- Footer -->
+          <footer id="footer">
+            <A HREF = "http://www.arpanghosh.com/cs315">Click to Go Back</A> 
+
+          </footer>
+      </div>
+    </div>
+
+
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script language="JavaScript">
+      window.onload = function() { document.body.className = ''; }
+      window.ontouchmove = function() { return false; }
+      window.onorientationchange = function() { document.body.scrollTop = 0; }
+      /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+  </body>
+</html>
